@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xunbao.lightingfb_android.MainActivity">
+
+
+
+    <com.qmuiteam.qmui.widget.QMUIWindowInsetLayout
+        android:id="@+id/content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tablayout_ll"
+        android:background="@color/qmui_config_color_white"/>
+    <LinearLayout
+        android:id="@+id/tablayout_ll"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/qmui_config_color_gray_8"/>
+
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tablayout_ct"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/qmui_config_color_white"
+            tl:tl_iconHeight="23dp"
+            tl:tl_iconWidth="23dp"
+            tl:tl_indicator_color="@color/qmui_config_color_blue"
+            tl:tl_indicator_height="0dp"
+            tl:tl_textSelectColor="@color/qmui_config_color_blue"
+            tl:tl_textUnselectColor="@color/qmui_config_color_gray_5"
+            tl:tl_textsize="12sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
